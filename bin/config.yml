@@ -1,0 +1,76 @@
+#  ---------------
+#      Evitaerc
+#  Made By: BeanMC
+#  ---------------
+#    Let's begin!
+#  ---------------
+
+# Broadcast system
+messages:
+  - "&bHello! This is just a message."
+  - "&bWhy haven't you changed the messages?"
+  - "&bI'm sure we will all get tired of these messages soon..."
+  - "&bYay. Something positive!"
+# Enter amount of seconds you would like to wait before broadcasting again.
+broadcastDelay: 120
+
+#  ---------------
+#      Messages
+#  ---------------
+
+action:
+  - "&8{>}&7 {NAME}"
+  - "&7{ACT}"
+balance:
+  - "&8{>}&7 Your&a balance&7 is&:"
+  - "&a{BAL}"
+broadcast:
+  - "&8{>}"
+  - "{BROADCAST}"
+  - "&8{>}"
+chatFormat:
+  - "&7{GROUP} {NAME} &8{>}&7 {MESSAGE}"
+error:
+  - "&8{>}&4&l ERROR"
+  - "&7{ERROR}"
+gamemode:
+  - "&8{>}&7 Your gamemode has been changed to:&b {MODE}"
+join:
+  - "&8{>}&7 Join"
+  - "&7{NAME}"
+list:
+  - "&8{>} &b{ONLINE}&8/&b{MAX}&7 online."
+  - "&7Here they are portrayed by rank!"
+  - "&7{LIST}"
+listGroup:
+  - "&8{>}&b {GROUP}&8 {>}&7 {PLAYERS}"
+listPlayer:
+  - "&7{NAME}&7"
+msg:
+  - "&b{NAME} &8{>}&7 Me"
+  - "&7{MESSAGE}"
+msgSend:
+  - "&7Me &8{>}&b {NAME}"
+  - "&7{MESSAGE}"
+noPermission:
+  - "&8{>}&4&l NO PERMISSION"
+  - "&c{PERM}"
+noInteract:
+  - "&8{>}"
+noPlace:
+  - "&8{>}"
+noUse:
+  - "&8{>}&4 You cannot use:&c {ID}"
+quit:
+  - "&8{>}&7 Leave"
+  - "&7{NAME}"
+tpa:
+  - "&8{>}&b TPA"
+  - "&7{NAME} would like to teleport."
+  - "&7Accept or Deny with&b /tpaccept&7 or &b/tpdeny"
+  - "&7Use&b /tpw <player>&7 to whitelist a player"
+  - "&7and auto-accept."
+  - "&7You have&b {TIME}&7 to accept."
+welcome:
+  - "&8{>}&b Welcome"
+  - "&f{NAME}"

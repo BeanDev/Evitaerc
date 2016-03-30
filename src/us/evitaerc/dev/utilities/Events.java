@@ -5,6 +5,7 @@ import java.util.List;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
@@ -19,6 +20,12 @@ public class Events implements Listener
 	///////////////////////
 	
 	@EventHandler
+	public void onInteract(PlayerInteractEvent __event)
+	{
+		
+	}
+	
+	@EventHandler
 	public void onJoin(PlayerJoinEvent __event)
 	{
 		// Removing join message
@@ -31,7 +38,7 @@ public class Events implements Listener
 		for(int i = 0; i < join.size(); i++)
 		{
 			// Broadcasting index of 'i' for 'join' in the config.yml
-			instance.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', join.get(i).replace("{>}", "»").replace("{NAME}", __event.getPlayer().getDisplayName())));
+			instance.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', join.get(i).replace("{>}", "Â»").replace("{NAME}", __event.getPlayer().getDisplayName())));
 		}
 	}
 	
@@ -48,7 +55,7 @@ public class Events implements Listener
 		for(int i = 0; i < quit.size(); i++)
 		{
 			// Broadcasting index of 'i' for 'quit' in the config.yml
-			instance.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', quit.get(i).replace("{>}", "»").replace("{NAME}", __event.getPlayer().getDisplayName())));
+			instance.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', quit.get(i).replace("{>}", "Â»").replace("{NAME}", __event.getPlayer().getDisplayName())));
 		}		
 	}
 }

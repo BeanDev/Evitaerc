@@ -41,22 +41,28 @@ public class Evitaerc extends JavaPlugin
 		// Create auto-broadcast run
 		instance.getServer().getScheduler().scheduleSyncRepeatingTask(instance, new Runnable()
 		{
+			// Getting all the messages from the 'config.yml'
 			List<String> messages = instance.getConfig().getStringList("messages");
 			int i0 = 0;
 			public void run()
 			{
+				// Adding one to the message iterator
 				i0 = i0 + 1;
+				// Checking if the iterator exceeds the size of the messages list
 				if(i0 > messages.size())
 				{
+					// Set it to read the first message if so
 					i0 = 0;
 				}
+				// Getting the multi-line format of the broadcaster
 				List<String> format = instance.getConfig().getStringList("broadcast");
 				for(int i1 = 0; i1 < format.size(); i1++)
 				{
-					instance.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', format.get(i1).replace("{>}", "»").replace("{BROADCAST}", messages.get(i0))));
+					// Sending the message
+					instance.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', format.get(i1).replace("{>}", "Â»").replace("{BROADCAST}", messages.get(i0))));
 				}
 			}
-		}, 0, instance.getConfig().getInt("broadcastDelay")*20);
+		}, 0, instance.getConfig().getInt("broadcastDelay")*20 /*This right here gets the delay between messages and puts in it seconds*/);
 	}
 	
 	public void onDisable()

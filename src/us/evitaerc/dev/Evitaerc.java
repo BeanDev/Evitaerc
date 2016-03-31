@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import us.evitaerc.dev.cmds.Gamemode;
+import us.evitaerc.dev.cmds.Message;
 import us.evitaerc.dev.utils.EventHandler;
 import us.evitaerc.dev.utils.apis.API;
 
@@ -21,6 +23,16 @@ public class Evitaerc extends JavaPlugin
 		
 		// Registering Events
 		plugin.getServer().getPluginManager().registerEvents(new EventHandler(), this);
+		
+		// Registering Commands
+		plugin.getCommand("gamemode").setExecutor(new Gamemode());
+		plugin.getCommand("gm").setExecutor(new Gamemode());
+		plugin.getCommand("gma").setExecutor(new Gamemode());
+		plugin.getCommand("gmc").setExecutor(new Gamemode());
+		plugin.getCommand("gms").setExecutor(new Gamemode());
+		plugin.getCommand("gmsp").setExecutor(new Gamemode());
+		plugin.getCommand("msg").setExecutor(new Message());
+		plugin.getCommand("tell").setExecutor(new Message());
 		
 		// Making auto-broadcaster
 		plugin.getServer().getScheduler().scheduleSyncRepeatingTask(plugin, new Runnable()

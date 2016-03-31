@@ -5,3 +5,35 @@ description: >
 main: us.evitaerc.dev.Evitaerc
 version: 0.0.6
 author: BeanMC
+
+commands:
+  gamemode:
+    aliases: [gm]
+    description: >
+                 Changes yours or another's gamemode.
+    usage: /<command> [Player] <Gamemode>
+  gma:
+    description: >
+                 Changes your gamemode to Adventure
+    usage: /<command>
+  gmc:
+    description: >
+                 Changes your gamemode to Creative
+    usage: /<command>
+  gms:
+    description: >
+                 Changes your gamemode to Survival
+    usage: /<command>
+  gmsp:
+    description: >
+                 Changes your gamemode to Spectator
+    usage: /<command>
+  msg:
+    description: >
+                 Messages a specified player
+    usage: /<command> <Player> <Message>
+permission:
+  evitaerc.*:
+    default: op
+    description: >
+                 Gives all permissions to the user.

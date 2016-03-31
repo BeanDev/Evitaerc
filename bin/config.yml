@@ -17,7 +17,7 @@ broadcastDelay: 120
 #  ---------------
 #      Messages
 #  ---------------
-
+# Not all of these actually do anything, and are only for planning purposes.
 action:
   - "&8{>}&7 {NAME}"
   - "&7{ACT}"

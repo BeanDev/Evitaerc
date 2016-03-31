@@ -1,0 +1,23 @@
+broadcast:
+  - "&8\u00BB &b&lBROADCAST&8 \u00AB"
+  - "&f "
+  - "&7{MESSAGE}"
+  - "&f "
+  - "&8\u00BB &b&lBROADCAST&8 \u00AB"
+error:
+  - "&8\u00BB&4&l ERROR"
+  - "&7{ERROR}"
+gamemode:
+  - "&8\u0BB&7 Your gamemode has been changed to&b {GAMEMODE}"
+join:
+  - "&8\u00BB&7 Join"
+  - "&7{NAME}"
+msgTo:
+  - "&7Me \u00BB&b {NAME}"
+  - "&7{MESSAGE}"
+msgFrom:
+  - "&b{NAME}&7 \u00BB Me"
+  - "&7{MESSAGE}"
+quit:
+  - "&8\u00BB&7 Join"
+  - "&7{NAME}"

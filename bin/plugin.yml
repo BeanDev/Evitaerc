@@ -1,9 +1,9 @@
 name: Evitaerc
 description: >
-             Evitaerc --- By: BeanMC
+             Made by: BeanMC
 
 main: us.evitaerc.dev.Evitaerc
-version: 0.0.4
+version: 0.0.6
 author: BeanMC
 
 commands:
